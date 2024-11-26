@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Responsivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .content {
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            padding: 20px;
+
+        }
+
+        .content h3 {
+            color: white;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        @media (min-width: 600px) {
+            .content {
+                flex-direction: row;
+                background-color: blue;
+                max-width: 800px;
+            }
+
+            .content h3 {
+                margin-left: 20px;
+                margin-top: 0;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAl3p97RG_KHunJEGvzO9JizJifJHUiAuZA&s"
+            alt="sponge-Bob">
+        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum nam laboriosam aliquid tempora
+            distinctio id non deserunt et ad deleniti maiores beatae cumque, quo incidunt. Perferendis aperiam mollitia
+            ad!</h3>
+    </div>
+</body>
+
+</html>
